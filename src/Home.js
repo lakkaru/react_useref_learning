@@ -1,9 +1,7 @@
 import React, { useRef, useState } from "react";
 
 export default function Home() {
-  //   const [name, setName] = useState();
-  //   const [email, setEmail] = useState('Enter your Email');
-  //   const [address, setAddress] = useState('Enter your Address');
+ 
   const [info, setInfo] = useState({});
   const cusDivRef = useRef();
   const nameRef = useRef();
@@ -13,14 +11,16 @@ export default function Home() {
   //   console.log(cusDivRef.current.style);
 
   const clearFields = () => {
+    nameRef.current.value='';
+    emailRef.current.value='';
+    addressRef.current.value='';
     setInfo({
         name:'',
-        email:''
-    })
+        email:'',
+        address:'',
+  });
   };
   const getInfo = () => {
-    // console.log(nameRef.current.value);
-
     setInfo({
       name: nameRef.current.value,
       email: emailRef.current.value,
