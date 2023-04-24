@@ -67,7 +67,7 @@ export default function Home() {
           type="text"
           id="name"
           autoFocus
-          placeHolder="Enter your Name"
+          placeholder="Enter your Name"
         />
       </div>
       <div
@@ -83,7 +83,7 @@ export default function Home() {
           ref={emailRef}
           type="text"
           id="email"
-          placeHolder="Enter your Email"
+          placeholder="Enter your Email"
         />
       </div>
       <div
@@ -99,7 +99,7 @@ export default function Home() {
           ref={addressRef}
           type="text"
           id="address"
-          placeHolder="Enter your Address"
+          placeholder="Enter your Address"
         />
       </div>
       <div
